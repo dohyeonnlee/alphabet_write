@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2000, height=1200">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+
+    <title>알파벳 따라 쓰기</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css">
+    <link rel="stylesheet" href="{% static '03_content/css/main_b1.css' %}">
+</head>
+<body>
+    <header>
+        <h1>b 따라 쓰기</h1>
+        <div id="life">
+            <div class="life1" id="life1"></div>
+            <div class="life2" id="life2"></div>
+            <div class="life3" id="life3"></div>
+            <div class="life4" id="life4"></div>
+        </div>
+    </header>
+
+    <div class="canvas-container">
+        <div class="wtauto">
+            <canvas id="canvas01"></canvas>
+            <canvas id="canvas1"></canvas>
+            <div class="bg"></div>
+        </div>
+
+        <div class="wtuser">
+            <canvas id="canvas02"></canvas>
+            <canvas id="canvas2"></canvas>
+                <div class="slider-container">
+                    <div class="round-container">
+                        <div id="round-slider1"></div>
+                        <div id="round-slider2"></div>
+
+                        <div class="guideline-container1">
+                            <canvas id="guideline-canvas1"></canvas>
+                        </div>
+                    </div>
+                    <div class="range-container">
+                        <input type="range" id="range-slider1" min="0" max="100" step="10" value="100" data-orientation="vertical">
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer-container">
+            <footer>
+                <button id="rebtn_reset">다시 쓰기</button>
+                <button id="rebtn_submit">완성</button>
+            </footer>
+        </div>
+
+        <div class="wttools"></div>
+    </div>
+
+    
+    <div id="failModal" class="modal" style="display: none;">
+        <div class="modal-content">
+        </div>
+    </div> 
+    <div id="clearModal" class="modal" style="display: none;">
+        <div class="modal-content">
+        </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1//jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <script src="{% static '03_content/js/main_b1.js' %}"></script>
+    <script src="{% static '03_content/js/main_b1_auto.js' %}"></script>
+</body>
+</html>

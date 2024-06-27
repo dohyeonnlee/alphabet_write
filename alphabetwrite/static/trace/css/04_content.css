@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 2000px;
+  height: 1200px;
+  overflow: hidden;
+  background-color: #F7FA79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  width: 1727px;
+  height: 1727px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 136px; /* X 좌표 */
+  top: -53px; /* Y 좌표 */
+}
+
+
+.letter_info {
+  position: absolute;
+  font-size: 200px;
+  font-family: 'jua';
+  left: 170px;
+  top: 480px;
+}
+
+.letter_A {
+  position: absolute;
+  font-size: 120px;
+  font-family: 'jua';
+  left: 621px;
+  top: 753px;
+}

@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2000, height=1200">
+    <title>02_content</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <link rel="stylesheet" href="{% static 'main/css/menu.css' %}">
+</head>
+<body>
+    <!-- 도서 선택 -->
+    <div class="bookcontainer">
+        <div class="page" id="page1">
+            <div class="book book1">
+                <div class="alphabet">
+                    <div class="item item1">A</div>
+                    <div class="item item2">a</div>
+                    <div class="item item3">1</div>
+                    <div class="item item4">
+                        <img class="a_img" src="{% static 'main/img/a_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">B</div>
+                    <div class="item item2">b</div>
+                    <div class="item item3">2</div>
+                    <div class="item item4">
+                        <img class="b_img" src="{% static 'main/img/b_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">C</div>
+                    <div class="item item2">c</div>
+                    <div class="item item3">3</div>
+                    <div class="item item4">
+                        <img class="c_img" src="{% static 'main/img/c_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="book book2">
+                <div class="alphabet">
+                    <div class="item item1">D</div>
+                    <div class="item item2">d</div>
+                    <div class="item item3">4</div>
+                    <div class="item item4">
+                        <img class="d_img" src="{% static 'main/img/d_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">E</div>
+                    <div class="item item2">e</div>
+                    <div class="item item3">5</div>
+                    <div class="item item4">
+                        <img class="e_img" src="{% static 'main/img/e_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">F</div>
+                    <div class="item item2">f</div>
+                    <div class="item item3">6</div>
+                    <div class="item item4">
+                        <img class="f_img" src="{% static 'main/img/f_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <div style="width: 120px; height: 120px; pointer-events: none;"></div>
+                <img class="nextbtn" src="{% static 'main/img/next.png' %}" alt="Next Books">
+            </div>
+        </div>
+
+        <div class="page" id="page2" style="display: none;">
+            <div class="book book1">
+                <div class="alphabet">
+                    <div class="item item1">G</div>
+                    <div class="item item2">g</div>
+                    <div class="item item3">7</div>
+                    <div class="item item4">
+                        <img class="g_img" src="{% static 'main/img/g_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">H</div>
+                    <div class="item item2">h</div>
+                    <div class="item item3">8</div>
+                    <div class="item item4">
+                        <img class="h_img" src="{% static 'main/img/h_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">I</div>
+                    <div class="item item2">i</div>
+                    <div class="item item3">9</div>
+                    <div class="item item4">
+                        <img class="i_img" src="{% static 'main/img/i_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="book book2">
+                <div class="alphabet">
+                    <div class="item item1">J</div>
+                    <div class="item item2">j</div>
+                    <div class="item item3">10</div>
+                    <div class="item item4">
+                        <img class="j_img" src="{% static 'main/img/j_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">K</div>
+                    <div class="item item2">k</div>
+                    <div class="item item3">11</div>
+                    <div class="item item4">
+                        <img class="k_img" src="{% static 'main/img/k_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">L</div>
+                    <div class="item item2">l</div>
+                    <div class="item item3">12</div>
+                    <div class="item item4">
+                        <img class="l_img" src="{% static 'main/img/l_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <img class="backbtn" src="{% static 'main/img/back.png' %}" alt="Back Books">
+                <img class="nextbtn" src="{% static 'main/img/next.png' %}" alt="Next Books">
+            </div>
+        </div>
+
+        <div class="page" id="page3" style="display: none;">
+            <div class="book book1">
+                <div class="alphabet">
+                    <div class="item item1">M</div>
+                    <div class="item item2">m</div>
+                    <div class="item item3">13</div>
+                    <div class="item item4">
+                        <img class="m_img" src="{% static 'main/img/m_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">N</div>
+                    <div class="item item2">n</div>
+                    <div class="item item3">14</div>
+                    <div class="item item4">
+                        <img class="n_img" src="{% static 'main/img/n_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">O</div>
+                    <div class="item item2">o</div>
+                    <div class="item item3">15</div>
+                    <div class="item item4">
+                        <img class="o_img" src="{% static 'main/img/o_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="book book2">
+                <div class="alphabet">
+                    <div class="item item1">P</div>
+                    <div class="item item2">p</div>
+                    <div class="item item3">16</div>
+                    <div class="item item4">
+                        <img class="p_img" src="{% static 'main/img/p_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">Q</div>
+                    <div class="item item2">q</div>
+                    <div class="item item3">17</div>
+                    <div class="item item4">
+                        <img class="q_img" src="{% static 'main/img/q_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">R</div>
+                    <div class="item item2">r</div>
+                    <div class="item item3">18</div>
+                    <div class="item item4">
+                        <img class="r_img" src="{% static 'main/img/r_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <img class="backbtn" src="{% static 'main/img/back.png' %}" alt="Back Books">
+                <img class="nextbtn" src="{% static 'main/img/next.png' %}" alt="Next Books">
+            </div>
+        </div>
+
+        <div class="page" id="page4" style="display: none;">
+            <div class="book book1">
+                <div class="alphabet">
+                    <div class="item item1">S</div>
+                    <div class="item item2">s</div>
+                    <div class="item item3">19</div>
+                    <div class="item item4">
+                        <img class="s_img" src="{% static 'main/img/s_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">T</div>
+                    <div class="item item2">t</div>
+                    <div class="item item3">20</div>
+                    <div class="item item4">
+                        <img class="t_img" src="{% static 'main/img/t_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">U</div>
+                    <div class="item item2">u</div>
+                    <div class="item item3">21</div>
+                    <div class="item item4">
+                        <img class="u_img" src="{% static 'main/img/u_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="book book2">
+                <div class="alphabet">
+                    <div class="item item1">V</div>
+                    <div class="item item2">v</div>
+                    <div class="item item3">22</div>
+                    <div class="item item4">
+                        <img class="v_img" src="{% static 'main/img/v_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">W</div>
+                    <div class="item item2">w</div>
+                    <div class="item item3">23</div>
+                    <div class="item item4">
+                        <img class="w_img" src="{% static 'main/img/w_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">X</div>
+                    <div class="item item2">x</div>
+                    <div class="item item3">24</div>
+                    <div class="item item4">
+                        <img class="x_img" src="{% static 'main/img/x_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <img class="backbtn" src="{% static 'main/img/back.png' %}" alt="Back Books">
+                <img class="nextbtn" src="{% static 'main/img/next.png' %}" alt="Next Books">
+            </div>
+        </div>
+
+        <div class="page" id="page5" style="display: none;">
+            <div class="book book1">
+                <div class="alphabet">
+                    <div class="item item1">Y</div>
+                    <div class="item item2">y</div>
+                    <div class="item item3">25</div>
+                    <div class="item item4">
+                        <img class="y_img" src="{% static 'main/img/y_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div class="alphabet">
+                    <div class="item item1">Z</div>
+                    <div class="item item2">z</div>
+                    <div class="item item3">26</div>
+                    <div class="item item4">
+                        <img class="z_img" src="{% static 'main/img/z_img.png' %}" style="width: 200px; height: 200px">
+                    </div>
+                    <div class="item item5"></div>
+                </div>
+                <div style="width: 470px; height: 470px; pointer-events: none;"></div>
+            </div>
+            <div class="controls">
+                <img class="backbtn" src="{% static 'main/img/back.png' %}" alt="Back Books">
+                <div style="width: 120px; height: 120px; pointer-events: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <img id="logoutbtn" src="{% static 'main/img/logout.png' %}" alt="logout">
+
+    <!-- 모달 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-left"></div>
+            <div class="modal-right">
+                <p class="txt"></p>
+                <p class='head'>선택한 알파벳이 맞나요?</p>
+                <div class="buttons">
+                    <button class="cancel">X</button>
+                    <button class="start">O</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- JSON 데이터를 안전하게 전달 -->
+    <script id="question-labels-data" type="application/json">
+        {{ question_labels_json|safe }}
+    </script>
+    
+    <script src="{% static 'main/js/menu.js' %}"></script>
+</body>
+</html>

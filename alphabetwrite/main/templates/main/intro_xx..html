@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2000, height=1200">
+    <title>인트로</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/intro.css' %}">
+</head>
+<body>
+    <div class="imgLoader"></div>
+    <div class="container">
+        <p class="title">함께해요 ABC</p>
+        <button class="credit">시작하기</button>
+        <div class="book">
+            <div class="gap"></div>
+            <div class="pages">
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+            </div>
+            <div class="flips">
+                <div class="flip flip1">
+                    <div class="flip flip2">
+                        <div class="flip flip3">
+                            <div class="flip flip4">
+                                <div class="flip flip5">
+                                    <div class="flip flip6">
+                                        <div class="flip flip7"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" name="btn" id="btn" checked>
+    <div class="content">
+        <div class="streetlamp">
+            <div class="head">
+                <label for="btn"></label>
+                <div class="top"></div>
+                <div class="glass"></div>
+                <div class="bot"></div>
+            </div>
+            <div class="light"></div>
+            <div class="ground-light"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{% static 'main/js/intro.js' %}"></script>
+</body>
+</html>

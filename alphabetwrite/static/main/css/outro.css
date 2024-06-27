@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #F7FA79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.page2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #e2effb;
+}
+
+.book{
+  background-image: url('../img/book1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1516px;
+  height: 1883px;
+  bottom: -1800px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveUp 10s forwards;
+  /* 10초간 천천히 위로 이동하는 애니메이션, 무한반복 */
+  
+
+}
+
+.letter {
+  font-size: 100px;
+  font-family: 'jua';
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  font-size: 100px;
+  font-family: 'jua';
+  position: absolute;
+  bottom: 5.5%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes moveUp {
+  0% {
+      bottom: -1800px;
+  }
+  100% {
+      bottom: 50px; 
+      /* 여기서 위로 움직이는 거리를 조절할 수 있습니다. */
+  }
+}
+
+
+
+.fin_button {
+  width: 245px;
+  height: 245px;
+  background-color: #366CBD;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  color: white;
+  font-size: 100px;
+  font-family: 'jua';
+  border: none; /* 이 부분이 테두리를 없애는 역할을 합니다. */
+  outline: none; /* 선택 효과를 제거합니다. */
+  z-index: 1;
+}
+.btn_shdow {
+  position: absolute;
+  bottom: 40px; /* Offset for shadow effect */
+  right: 40px; /* Offset for shadow effect */
+  width: 245px;
+  height: 245px;
+  background-color: #C9C9C9; /* Gray color */
+  border-radius: 50%;
+  border: none; /* 이 부분이 테두리를 없애는 역할을 합니다. */
+}

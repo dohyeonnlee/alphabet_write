@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=2000, height=1200">
+        <title>인트로</title>
+        <link rel="stylesheet" href="{% static 'accounts/css/card.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="card"> <!-- 클릭 이벤트로 is-flipped 클래스를 토글함 -->
+            <div class="card-front">
+                <form method="post" action="{% url 'accounts:login' %}">
+                {% csrf_token %}
+                    <svg id="bear" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,150 C0,65 120,65 120,150" fill="#FFFFFF" />
+                        <g class="ears">
+                            <path d="M46,60 L46,30 C46,16 26,16 26,30 L26,32" fill="#FFFFFF" transform="rotate(-10,38,24)" />
+                            <path d="M74,60 L74,30 C74,16 94,16 94,30 L94,32" fill="#FFFFFF" transform="rotate(10,82,24)" />
+                        </g>
+                        <g class="face">
+                            <circle cx="60" cy="60" r="40" fill="#FFFFFF"  />
+                            <ellipse cx="60" cy="73" rx="45" ry="27" fill="#FFFFFF" />
+                        </g>
+    
+                        <g class="blusher">
+                            <ellipse cx="40" cy="70" rx="13" ry="10" fill="#C8E7FA" />
+                            <ellipse cx="80" cy="70" rx="13" ry="10" fill="#C8E7FA" />
+                        </g>
+    
+                        <g class="eyes">
+                            <!-- 왼쪽 눈-->
+                            <!-- <line x1="37" x2="50" y1="46" y2="46" stroke="#000" stroke-width="3" stroke-linecap="round" /> -->
+                            <circle cx="50" cy="60" r="4" fill="#000" />
+                            <!-- 오른쪽 눈 -->
+                            <circle cx="70" cy="60" r="4" fill="#000" />
+    
+    
+                        </g>
+                        <g class="nose">
+                            <ellipse cx="60" cy="67" rx="6" ry="4" fill="#000000" />
+                        </g>
+                        <g class="mouth">
+                            <line x1="49" y1="77" x2="71" y2="77" stroke="#000" stroke-width="4" />
+                            <path d="M 50,77 A 10,10 0 0,0 70,77" fill="#EC6B69" stroke="#000" stroke-width="2" stroke-linejoin="round" />
+                        </g>
+                        <!-- 옷 -->
+                        <ellipse cx="60" cy="120" rx="25" ry="15" fill="#C8E7FA" />
+                        <!-- <path d="M40,105 C10,140 110,140 80,105 L80,105 L70,111 L60,105 L50,111 L40,105" fill="#C8E7FA" /> -->
+                    </svg>
+                    <div class="inputs">
+                        <div class="mb-3">
+                            <label for="username">사용자 이름</label>
+                            <input type="text" class="form-control" name="username" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password">비밀번호</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">로그인</button>
+                        <div class="txt" onclick="document.querySelector('.card').classList.toggle('is-flipped');">
+                            <div id="signup" style="border-bottom: 4px solid #FFFFFF;"> 회원가입</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-back">
+                <form class="login" method="post" action="{% url 'accounts:signup' %}">
+                    {% csrf_token %}
+                    <svg id="bear" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,150 C0,65 120,65 120,150" fill="#FFFFFF" />
+                        <g class="ears">
+                            <path d="M46,60 L46,30 C46,16 26,16 26,30 L26,32" fill="#FFFFFF" transform="rotate(-10,38,24)" />
+                            <path d="M74,60 L74,30 C74,16 94,16 94,30 L94,32" fill="#FFFFFF" transform="rotate(10,82,24)" />
+                        </g>
+                        <g class="face">
+                            <circle cx="60" cy="60" r="40" fill="#FFFFFF"  />
+                            <ellipse cx="60" cy="73" rx="45" ry="27" fill="#FFFFFF" />
+                        </g>
+            
+                        <g class="blusher">
+                            <ellipse cx="40" cy="70" rx="13" ry="10" fill="#C8E7FA" />
+                            <ellipse cx="80" cy="70" rx="13" ry="10" fill="#C8E7FA" />
+                        </g>
+            
+                        <g class="eyes">
+                            <!-- 왼쪽 눈-->
+                            <!-- <line x1="37" x2="50" y1="46" y2="46" stroke="#000" stroke-width="3" stroke-linecap="round" /> -->
+                            <circle cx="50" cy="60" r="4" fill="#000" />
+                            <!-- 오른쪽 눈 -->
+                            <circle cx="70" cy="60" r="4" fill="#000" />
+            
+            
+                        </g>
+                        <g class="nose">
+                            <ellipse cx="60" cy="67" rx="6" ry="4" fill="#000000" />
+                        </g>
+                        <g class="mouth">
+                            <line x1="49" y1="77" x2="71" y2="77" stroke="#000" stroke-width="4" />
+                            <path d="M 50,77 A 10,10 0 0,0 70,77" fill="#EC6B69" stroke="#000" stroke-width="2" stroke-linejoin="round" />
+                        </g>
+                        <!-- 옷 -->
+                        <ellipse cx="60" cy="120" rx="25" ry="15" fill="#C8E7FA" />
+                        <!-- <path d="M40,105 C10,140 110,140 80,105 L80,105 L70,111 L60,105 L50,111 L40,105" fill="#C8E7FA" /> -->
+                    </svg>
+                    <div class="inputs">
+                        <div class="mb-3">
+                            <label for="username"> 사용자 이름</label>
+                            <input type="text" class="form-control" name="username" id="username"
+                                    value="{{ form.username.value|default_if_none:'' }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password1">비밀번호</label>
+                            <input type="password" class="form-control" name="password1" id="password1"
+                                    value="{{ form.password1.value|default_if_none:'' }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password2">비밀번호 확인</label>
+                            <input type="password" class="form-control" name="password2" id="password2"
+                                    value="{{ form.password2.value|default_if_none:'' }}">
+                        </div>
+                        <button type="submit" class="btn btn-primary">생성하기</button>
+                        <div class="txt" onclick="document.querySelector('.card').classList.toggle('is-flipped');">
+                            <div id="login" style="border-bottom: 4px solid #FFFFFF;"> 로그인</div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,356 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 2000px;
+  height: 1200px;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #DCFF97;
+}
+header{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: left;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1{
+  margin: auto;
+  font-family: 'jua';
+  font-size: 400%;
+}
+#life{
+  position: absolute;
+  transform: translate(5%, 10%);
+  width: 400px;
+  height: 100px;
+  z-index: 999;
+  display: flex;
+}
+
+.life1, .life2, .life3, .life4{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/d3d3d3.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.canvas-container {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+/* 각 캔버스의 스타일 설정 */
+.canvas-container .wtauto, .wtuser {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+#canvas01 {
+  background-image: url("../img/banana_up_1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+#canvas1{
+  width: 900px;
+  height: 900px;
+  transform: translate(0%, 0%);
+  display: flex;
+  position: absolute;
+  z-index: 4;
+}
+.wtauto .bg{
+  background-image: url("../img/banana_up_2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  border-radius: 30px;
+  z-index: 5;
+}
+#canvas02 {
+  background-image: url("../img/banana_up_guideline_n.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+#canvas2{
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  z-index: 4;
+}
+#draw_canvas1, #draw_canvas2, #draw_canvas3, #draw_canvas4, #draw_canvas5 {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  z-index: 6;
+}
+
+
+.container {
+  background-color: whitesmoke;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+.wttools {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 7;
+  order: 1;
+}
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 3;
+  order: 2;
+}
+.footer-container footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.footer-container button {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  height: 80%;
+  font-size: 300%;
+  font-family: 'jua';
+  display: inline-block;
+  text-align: center;
+  padding: 20px 32px;
+  margin: 4px 2px;
+  border-radius: 30px;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+.footer-container button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+
+.wttools form {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.wttools label {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 100%;
+  margin-top: 10%;
+  margin-right: 10%;
+}
+.wttools label i {
+  font-size: 200px;
+}
+.wttools label:nth-of-type(1) i {
+  color: black;
+}
+.wttools label:nth-of-type(2) i {
+  color: red;
+}
+.wttools label:nth-of-type(3) i {
+  color: blue;
+}
+.wttools label:nth-of-type(4) i {
+  color: green;
+}
+.wttools label:nth-of-type(5) i {
+  color: orange;
+}
+.wttools input[type="radio"] {
+  display: none;
+}
+.wttools input[type="radio"] + i {
+  transform: rotate(135deg);
+  position: relative;
+}
+.wttools input[type="radio"]:checked + i {
+  font-size: 230px;
+  transform: translateY(-20px) rotate(135deg); /* 선택된 아이콘을 위로 50px 이동 */
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10; /* 모달의 z-index 값을 다른 요소들보다 높게 설정 */
+  left: 0;
+  top: 0;
+  width: 2000px;
+  height: 1200px;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 모달 내용 */
+#myModal .modal-content {
+  background-image: url('../img/stamp1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 800px;
+  height: 800px;
+  position: absolute; /* 부모 요소에 대해 절대 위치 설정 */
+  top: 50%; /* 부모 요소의 상단에서 50% 지점에 배치 */
+  left: 50%; /* 부모 요소의 왼쪽에서 50% 지점에 배치 */
+  transform: translate(-50%, -50%); /* 요소의 중앙을 정확히 화면의 중앙에 위치하도록 이동 */
+  /* background-color: #fefefe; */
+  padding: 20px;
+  max-width: 80%; /* 모달 최대 너비 설정 */
+  max-height: 80%; /* 모달 최대 높이 설정 */
+  z-index: 11;
+}
+
+
+/* 모달 내용 */
+#inkModal .modal-content {
+  background-image: url('../img/stamp_ink.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 800px;
+  height: 800px;
+  position: absolute; /* 부모 요소에 대해 절대 위치 설정 */
+  top: 50%; /* 부모 요소의 상단에서 50% 지점에 배치 */
+  left: 50%; /* 부모 요소의 왼쪽에서 50% 지점에 배치 */
+  transform: translate(-50%, -50%); /* 요소의 중앙을 정확히 화면의 중앙에 위치하도록 이동 */
+  /* background-color: #fefefe; */
+  padding: 20px;
+  max-width: 80%; /* 모달 최대 너비 설정 */
+  max-height: 80%; /* 모달 최대 높이 설정 */
+  z-index: 11;
+}
+
+
+
+/* 모달 내용 */
+#finModal .modal-content {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #FDFFFD;
+  border-radius: 80px;
+  width: 1450px;
+  height: 750px;
+  font-family: 'jua';
+  text-align: center;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal-left {
+  flex: 0 0 40%;
+  background-image: url("../img/q_img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-right {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .txt {
+  font-size: 80px;
+  width: 92%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .buttons {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.modal button {
+  margin-top: 30px;
+  font-size: 100px;
+  font-family: 'jua';
+  color: white;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+.modal .tryag {
+  background-color: #02B1F0;
+  width: 650px;
+  height: 180px;
+  margin-right: 40px;
+} 

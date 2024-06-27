@@ -1,0 +1,210 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 2000px;
+  height: 1200px;
+  position: fixed;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  background-color: #FFDB1B;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 98%;
+  height: 1000px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.book {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.alphabet {
+  background-image: url("../img/al_bg_500.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 470px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'jua';
+  color: #565656;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.item {
+  text-align: center;
+  margin: 10px;
+}
+.item1 {
+  position: absolute;
+  transform: translate(-50%, 0);
+  font-size: 200px;
+  text-shadow: -5px 0px #E6E6E6, 0px 5px #E6E6E6, 5px 0px #E6E6E6, 0px -5px #E6E6E6;
+}
+.item2 {
+  position: absolute;
+  transform: translate(80%, 0);
+  font-size: 200px;
+  text-shadow: -5px 0px #E6E6E6, 0px 5px #E6E6E6, 5px 0px #E6E6E6, 0px -5px #E6E6E6;
+}
+.item3 {
+  display: none;
+}
+.item4 {
+  position: absolute;
+  transform: translate(0, 110%);
+}
+
+.item5 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0px;
+  bottom: 0px ;
+}
+.clear-background {
+  background-image: url("../img/clear.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.controls {
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nextbtn{
+  width: 120px;
+  height: 120px;
+}
+.backbtn{
+  width: 120px;
+  height: 120px;
+}
+
+#logoutbtn{
+  position: absolute;
+  top: 5%;
+  right: 10px;
+}
+
+
+
+ .modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #FDFFFD;
+  border-radius: 80px;
+  width: 1000px;
+  height: 500px;
+  font-family: 'jua';
+  text-align: center;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.3);
+}
+.modal-left {
+  flex: 0 0 40%;
+  background-image: url("../img/q_img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal-right {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .txt {
+  font-size: 150px;
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .head {
+  font-size: 60px;
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .buttons {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.modal button {
+  font-size: 100px;
+  font-family: 'jua';
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  box-shadow: 
+    2px 2px 6px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 5px rgba(255, 255, 255, 0.6);
+}
+.modal .cancel {
+  background-color: #FEA500;
+  width: 180px;
+  height: 180px;
+  margin-right: 40px;
+} 
+.modal .start {
+  background-color: #02B1F0;
+  width: 180px;
+  height: 180px;
+  margin-left: 40px;
+} 

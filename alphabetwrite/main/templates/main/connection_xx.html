@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2000, height=1200">
+    <title>02_content</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap">
+    <link rel="stylesheet" href="{% static 'main/css/connection.css' %}">
+</head>
+<body>
+    <div class="bg">
+        <img src="{% static 'main/img/con_item1.png' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="letter_info">알파벳을 배워봐요</div>
+        <div class="letter"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="{% static 'main/js/connection.js' %}"></script>
+</body>
+</html>

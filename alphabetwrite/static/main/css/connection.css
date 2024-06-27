@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+    height: 1200px;
+    overflow: hidden;
+    background-image: url('../img/con_bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+}
+
+.bg{
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+    height: 1200px;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+.bg img{
+    position:absolute;
+    /* width: 1585.49px;
+    height: 2658.25px; */
+    left:-850px;
+    top: -682.92px;
+}
+
+
+
+
+.container {
+    position: absolute;
+    width: 1727px;
+    height: 1727px;
+    border-radius: 50%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 136px; /* X 좌표 */
+    top: -53px; /* Y 좌표 */
+}
+
+.letter_info {
+    position: absolute;
+    font-size: 200px;
+    font-family: 'jua';
+    left: 170px;
+    top: 300px;
+    display: none;
+}
+
+.letter {
+    position: absolute;
+    font-size: 120px;
+    font-family: 'jua';
+    left: 621px;
+    top: 553px;
+    display: none;
+}
