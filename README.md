@@ -64,19 +64,15 @@ python manage.py runserver
 
 공부할 알파벳 선택
 
-![image](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/153979a6-0ed8-460e-b2eb-535e604d5fb2)
-
+![캡처](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/2ac83bf4-9a99-4ded-926e-dc05f3d0b64b)
 
 공부 과정
 
-![image](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/4186bd58-cef0-4a1d-b4eb-550f532015a4)
-
+![캡처2](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/71794fb9-f333-4376-844c-26f41b02e456)
 
 오답일 경우
 
-![image](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/7b743b81-a996-4084-b772-2ea855ad3ee1)
-
-
+![캡처3](https://github.com/dohyeonnlee/alphabet_write/assets/99801524/a2ee597b-f670-4685-9792-c538a0005919)
 
 
 ## 📌 개발 환경 / 툴
